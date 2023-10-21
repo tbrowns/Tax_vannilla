@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">TAX CALCULATOR</div>
+    <select id="country">
+        <option class="opts">Kenya</option>
+        <option class="opts">Burundi</option>
+        <option class="opts">Uganda</option>
+        <option class="opts">Tanzania</option>
+        <option class="opts">Rwanda</option>
+    </select>
+    <div class="content">
+        <input type="text" placeholder="Enter your income..." id="income">
+        <input type="text" placeholder="Enter a valid amount" id="invalid" style="display: none;"><br>
+        <select id="dropdown">
+            <option class="opts">NSSF rates</option>
+            <option class="opts">Tier 1</option>
+            <option class="opts">Tier 1 & 2</option>
+            <option class="opts">Old Rates</option>
+            <option class="opts">None</option>
+        </select><br>
+
+        <button type="submit" id="btn">
+            <div id="calc" class="calc">Calculate</div>
+            <div id="ring" class="ring" style="display: none;"></div>
+        </button> <br>
+
+        
+
+        <div class="payslip" id="my_payslip" style="display: none;">
+            <div class="title">My Payslip</div> <br>
+            SALARY: <span id="salary"></span><br>
+            NSSF: <span id="nssf"></span><br>
+            TAXABLE: <span id="taxable"></span><br>
+            TAX: <span id="tax_amount"></span><br>
+            RELIEF: <span id="relief"></span><br>
+            P.A.Y.E: <span id="paye"></span><br>
+            HOUSING LEVY: <span id="levy"></span><br>
+            NETPAY: <span id="net_amount"></span><br>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
